@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: rgb(233, 233, 233);
+    background-color: rgba(248, 7, 59, 0.65);
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s;
+}
+a:hover{
+    background-color: rgba(255, 255, 255, 0.623);
+    color: rgba(248, 7, 59, 0.65);
+    border: 2px solid rgba(248, 7, 59, 0.65);;
+}
+li{
+    list-style: none;
+}
+.botonaso{
+    display: none;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.192);
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+}
+.cabecera{
+    background-image: url("https://i.pinimg.com/originals/82/09/ae/8209ae1174bfa381438589ced844b97a.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.TITULO{
+    height: 60%;
+    display: flex;
+    justify-content: right;
+    padding-top: 250px;
+    padding-right: 150px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    font-size: 50px;
+}
+.potosi{
+    color: rgba(216, 6, 6, 0.781);
+}
+.seccion{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    height: 80vh;
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    justify-content: center;
+}
+.seccion h1{
+    font-size: 50px;
+    color: rgb(255, 145, 42);
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 50px;
+    margin-left: 25px;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagenes img{
+    width: 30%;
+    border-radius: 25px;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s;
+}
+.imagenes img:hover{
+    transform: scaleX(1.1);
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.192);
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: rgb(44, 44, 44);
+}
+
+@media only screen and (max-width: 768px) 
+{
+    nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 15;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.863);
+        top: -2000px;
+        transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+    }
+    nav li{
+        width: 60%;
+        display: flex;
+    }
+    nav li a{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .botonaso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(3, 120, 189);
+        border-style: none;
+        position: fixed;
+    }
+    .botonaso i{
+        font-size: 30px;
+        border: 1px solid rgb(255, 255, 255);
+        color: white;
+        padding: 6px;
+        border-radius: 50%;
+    }
+    .botonaso:hover i{
+        background-color: rgb(255, 255, 255);
+        color: rgb(3, 120, 189);
+    }
+    .TITULO{
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+    }
+    .TITULO h1{
+        font-size: 50px;
+        margin-top: 70px;
+    }
+    .seccion{
+        height: auto;
+    }
+    .seccion h1{
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .imagenes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .imagenes img{
+        width: 80%;
+        margin: 10px 0px;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
